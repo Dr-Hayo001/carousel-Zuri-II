@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--  parent container for all elements -->
+    <div class="container">
+        <!-- img container -->
+        <div class="img">
+            <img src="./images/img1.jpg">
+            <img src="./images/img2.jpg">
+            <img src="./images/img3.jpg">
+            <img src="./images/img4.jpg">
+            <img src="./images/img5.jpg">
+            <img src="./images/img6.jpg">
+            
+        </div>
+        <!--  arrow slide -->
+        <div onclick="side_slide(-1)" class="slide left">
+            <span class="fa fa-chevron-left"></span>
+        </div>
+        <div onclick="side_slide(1)" class="slide right">
+            <span class="fa fa-chevron-right"></span>
+        </div>
+        <!-- bottom slide botton -->
+        <div class="btm-slide">
+            <span onclick="btm_slide(1)"><input type="radio" name="slide" id=""></span>
+            <span onclick="btm_slide(2)"><input type="radio" name="slide" id=""></span>
+            <span onclick="btm_slide(3)"><input type="radio" name="slide" id=""></span>
+            <span onclick="btm_slide(4)"><input type="radio" name="slide" id=""></span>
+            <span onclick="btm_slide(5)"><input type="radio" name="slide" id=""></span>
+            <span onclick="btm_slide(6)"><input type="radio" name="slide" id=""></span>
+        </div>
+
+
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>

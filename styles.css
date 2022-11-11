@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ADD8E6;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+/* target container*/
+.container{
+    height: 500px;
+    width: 800px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+/* fit the img into the container */
+.container .img{
+    width: 100%;
+    height: 100%;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+}
+/* container styling ends */
+
+/* bottom radio slider */
+.btm-slide{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%)
+}
+
+.btm-slide span input{
+    height: 20px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.btm-slide span input:hover{
+    background: #fff;
+}
+
+/* bottom radio slider styling ends */
+
+
+/* side arrow slide */
+.container .slide{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    border-radius: 30px;
+    cursor: pointer;
+    background: rgba(11, 10, 10, 0.2);
+    opacity: 0.1;
+}
+
+.container .slide:hover{
+    background: rgba(10, 9, 9, 0.9);
+    opacity: 0.9;
+}
+.slide span{
+    font-size: 25px;
+    color: white;
+    line-height: 41px;
+    
+}
+
+.container .right{
+    right: 0;
+}
+
+/* side arrow slider styling ends */
